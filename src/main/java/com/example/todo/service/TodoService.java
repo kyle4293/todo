@@ -37,7 +37,7 @@ public class TodoService {
         Todo saveTodo = todoRepository.save(todo);
 
         // Entity -> ResponseDto
-        TodoResponseDto todoResponseDto = new TodoResponseDto(saveTodo);
+        TodoResponseDto todoResponseDto = new TodoResponseDto(todo);
 
         return todoResponseDto;
     }
